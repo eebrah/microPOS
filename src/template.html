@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sapient Systems :: microPOS</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+            </div>
+            <div class="body">
+                <div class="container-form-account">
+                    <form action="?section=accounts&amp;action=edit"
+                          method="POST">
+                        <fieldset class="info">
+                            <div class="field">
+                                <label for="name">name</label>
+                                <input type="text"
+                                       name="name"
+                                       required="required"
+                                       placeholder="account name" />
+                            </div>
+                            <div class="field">
+                                <label for="description">description</label>
+                                <textarea name="description"
+                                          required="required"
+                                          placeholder=""></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <button type="reset">reset</button>
+                            <button type="submit">submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="container-form-transaction">
+                    <form action="?section=accounts&amp;action=edit"
+                          method="POST">
+                        <fieldset class="info">
+                            <div class="field">
+                                <label for="name">name</label>
+                                <input type="text"
+                                       name="name"
+                                       required="required"
+                                       placeholder="" />
+                            </div>
+                            <div class="field">
+                                <label for="description">description</label>
+                                <textarea name="description"
+                                          required="required"
+                                          placeholder=""></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <button type="reset">reset</button>
+                            <button type="submit">submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="container-form-transfer">
+                    <form action="?section=accounts&amp;action=edit"
+                          method="POST">
+                        <fieldset class="info">
+                            <div class="field">
+                                <label for="amount">amount</label>
+                                <input type="number"
+                                       name="amount"
+                                       required="required"
+                                       placeholder="amount to transfer" />
+                            </div>
+                            <div class="field">
+                                <label for="from">from</label>
+                                <select name="from"
+                                        required="required">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="to">to</label>
+                                <select name="to"
+                                        required="required">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="buttons">
+                            <button type="reset">reset</button>
+                            <button type="submit">submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="container-display-account">
+                    <div class="name"></div>
+                    <div class="description"></div>
+                    <div class="transfers">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">#</th>
+                                    <th colspan="2">amount</th>
+                                </tr>
+                                <tr>
+                                    <th>incoming</th>
+                                    <th>outgoing</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-table-accounts">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>name</th>
+                                <th>description</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="name"></td>
+                                <td data-label="description"></td>
+                                <td data-label="actions"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container-table-transactions">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>name</th>
+                                <th>description</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="name"></td>
+                                <td data-label="description"></td>
+                                <td data-label="actions"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container-table-transfers">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>amount</th>
+                                <th>from</th>
+                                <th>to</th>
+                                <th>transaction</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="amount"></td>
+                                <td data-label="from"></td>
+                                <td data-label="to"></td>
+                                <td data-label="transaction"></td>
+                                <td data-label="actions"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </body>
+</html>
